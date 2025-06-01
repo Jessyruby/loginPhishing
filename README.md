@@ -1,6 +1,6 @@
 # LoginPhishing
 
-![Página]([https://i.imgur.com/seuarquivo.png]([https://imgur.com/1rDGZQO](https://imgur.com/ZDiX2gC))
+![Página]([https://imgur.com/ZDiX2gC])
 
 Este projeto tem como objetivo demonstrar, de forma **educacional**, como uma página de phishing pode ser criada para fins de **conscientização sobre segurança da informação**. 
 
