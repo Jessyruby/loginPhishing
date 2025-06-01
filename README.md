@@ -1,6 +1,6 @@
 # LoginPhishing
 
-![Página]([https://imgur.com/ZDiX2gC])
+![Página de Login](https://imgur.com/ZDiX2gC)
 
 Este projeto tem como objetivo demonstrar, de forma **educacional**, como uma página de phishing pode ser criada para fins de **conscientização sobre segurança da informação**. 
 
@@ -19,22 +19,22 @@ O projeto simula uma página de login com aparência legítima, capturando crede
 - HTML5
 - CSS3
 - JavaScript (puro)
-- [EmailJS](https://www.emailjs.com/) – envio de dados via e-mail
+- [EmailJS](https://dashboard.emailjs.com/) – envio de dados via e-mail
 
 ---
 ## Como Funciona
 
-![Página]([https://i.imgur.com/seuarquivo.png](https://imgur.com/1rDGZQO))
+![Página](https://imgur.com/1rDGZQO)
 
 É enviado para a vítima o email criado com a extensão HTML Editor for Gmail by cloudHQ
 
-![Página]([https://imgur.com/ZHFzDOG))
+![Página](https://imgur.com/ZHFzDOG)
 
-A vitima preenche o formulário e confirma
+A vitima preenche o formulário
 
 ---
 
-![Página]([https://imgur.com/ZHFzDOG](https://imgur.com/jis3GgN))
+![Página](https://imgur.com/jis3GgN)
 
 E os dados preenchidos pela vítima será enviados para seu email
 
@@ -48,9 +48,12 @@ E os dados preenchidos pela vítima será enviados para seu email
 2. Configure o serviço EmailJS:
    - Crie uma conta no EmailJS
    - Crie um service, template, e copie sua public key
-   - Substitua no código:
-       emailjs.init("Sua Public Key");
-       emailjs.send("Seu Service ID", "Seu Template ID", templateParams)
+
+3. Substitua no código:
+
+   ![Página](https://imgur.com/jjBrSeB)
+
+      
 
 
 
