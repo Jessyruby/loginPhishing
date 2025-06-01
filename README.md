@@ -1,6 +1,6 @@
 # LoginPhishing
 
-![Página de Login](https://imgur.com/ZDiX2gC)
+![Página de Login](https://i.imgur.com/ZDiX2gC.png)
 
 Este projeto tem como objetivo demonstrar, de forma **educacional**, como uma página de phishing pode ser criada para fins de **conscientização sobre segurança da informação**. 
 
@@ -24,17 +24,17 @@ O projeto simula uma página de login com aparência legítima, capturando crede
 ---
 ## Como Funciona
 
-![Página](https://imgur.com/1rDGZQO)
+![Página](https://i.imgur.com/1rDGZQO.png)
 
 É enviado para a vítima o email criado com a extensão HTML Editor for Gmail by cloudHQ
 
-![Página](https://imgur.com/ZHFzDOG)
+![Página](https://i.imgur.com/ZHFzDOG.png)
 
 A vitima preenche o formulário
 
 ---
 
-![Página](https://imgur.com/jis3GgN)
+![Página](https://i.imgur.com/jis3GgN.png)
 
 E os dados preenchidos pela vítima será enviados para seu email
 
@@ -51,7 +51,7 @@ E os dados preenchidos pela vítima será enviados para seu email
 
 3. Substitua no código:
 
-   ![Página](https://imgur.com/jjBrSeB)
+   ![Página](https://i.imgur.com/jjBrSeB.png)
 
       
 
