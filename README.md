@@ -8,7 +8,7 @@
 
 Este projeto tem como objetivo demonstrar, de forma **educacional**, como uma página de phishing pode ser criada para fins de **conscientização sobre segurança da informação**. 
 
-<br>
+<br><br>
 
 > ⚠️ **Atenção:** Este projeto é **exclusivamente para fins educacionais e acadêmicos**. Nunca deve ser usado para fins maliciosos, coleta real de dados, ou violação de privacidade. O uso indevido pode ser considerado crime e é passível de penalidades legais.
 
@@ -20,7 +20,7 @@ Este projeto tem como objetivo demonstrar, de forma **educacional**, como uma p�
 
 ##  Objetivo
 
-<br><br>
+<br>
 
 O projeto simula uma página de login com aparência legítima, capturando credenciais de forma didática utilizando **HTML**, **CSS**, **JavaScript** e a biblioteca **EmailJS** para envio dos dados preenchidos no formulário.
 
@@ -55,7 +55,7 @@ O projeto simula uma página de login com aparência legítima, capturando crede
 
 É enviado para a vítima o email criado com a extensão HTML Editor for Gmail by cloudHQ
 
-<br>
+<br><br>
 
 ![Página](https://i.imgur.com/ZHFzDOG.png)
 
@@ -63,7 +63,7 @@ O projeto simula uma página de login com aparência legítima, capturando crede
 
 A vitima preenche o formulário
 
-<br>
+<br><br>
 
 ---
 
@@ -79,11 +79,10 @@ E os dados preenchidos pela vítima será enviados para seu email
 
 ---
 
-<br><br>
+<br>
 
 ## Como Usar
 
-<br>
 
 1. Clone o repositório:
    git clone https://github.com/seu-usuario/nome-do-repositorio.git
@@ -93,8 +92,6 @@ E os dados preenchidos pela vítima será enviados para seu email
    - Crie um service, template, e copie sua public key
 
 3. Substitua no código:
-
-<br>
 
    ![Página](https://i.imgur.com/jjBrSeB.png)
 
