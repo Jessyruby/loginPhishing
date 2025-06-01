@@ -61,7 +61,7 @@ O projeto simula uma página de login com aparência legítima, capturando crede
 
 <br>
 
-A vitima preenche o formulário
+A vítima clica no link enviado pelo atacante e preenche o formulário
 
 <br><br>
 
@@ -73,7 +73,7 @@ A vitima preenche o formulário
 
 <br>
 
-E os dados preenchidos pela vítima será enviados para seu email
+E os dados preenchidos pela vítima será enviados para o email do atacante
 
 <br>
 
