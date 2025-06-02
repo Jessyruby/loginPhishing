@@ -85,6 +85,7 @@ E os dados preenchidos pela vítima será enviados para o email do atacante
 
 
 1. Clone o repositório:
+   ```bash
    git clone https://github.com/seu-usuario/nome-do-repositorio.git
    
 2. Configure o serviço EmailJS:
@@ -92,7 +93,7 @@ E os dados preenchidos pela vítima será enviados para o email do atacante
    - Crie um service, template, e copie sua public key
 
 3. Substitua no código:
-
+   
    ![Página](https://i.imgur.com/jjBrSeB.png)
 
       
